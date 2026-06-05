@@ -478,7 +478,7 @@ function AiChat({ messages, input, setInput, onSend, loading, aiEndRef }) {
         }}>
           <div style={{ padding: "14px 16px", borderBottom: "1px solid #1e2130", display: "flex", alignItems: "center", justifyContent: "space-between" }}>
             <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-              <div style={{ width: 28, height: 28, borderRadius: 50%, background: "linear-gradient(135deg,#7c3aed,#4f46e5)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+              <div style={{ width: 28, height: 28, borderRadius: "50%", background: "linear-gradient(135deg,#7c3aed,#4f46e5)", display: "flex", alignItems: "center", justifyContent: "center" }}>
                 <i className="ti ti-sparkles" style={{ fontSize: 13, color: "#fff" }} aria-hidden="true" />
               </div>
               <span style={{ fontSize: 13, fontWeight: 500, color: "#e8eaf0" }}>AI Assistant</span>
@@ -503,7 +503,7 @@ function AiChat({ messages, input, setInput, onSend, loading, aiEndRef }) {
               <div style={{ display: "flex", gap: 4, padding: "4px 0" }}>
                 {[0, 1, 2].map(i => (
                   <div key={i} style={{
-                    width: 6, height: 6, borderRadius: 50%, background: "#6b7280",
+                    width: 6, height: 6, borderRadius: "50%", background: "#6b7280",
                     animation: `bounce 1s ${i * 0.15}s infinite`,
                   }} />
                 ))}
@@ -543,7 +543,7 @@ function AiChat({ messages, input, setInput, onSend, loading, aiEndRef }) {
       <button
         onClick={() => setOpen(o => !o)}
         style={{
-          position: "fixed", bottom: 24, right: 24, width: 52, height: 52, borderRadius: 50%,
+          position: "fixed", bottom: 24, right: 24, width: 52, height: 52, borderRadius: "50%",
           background: "linear-gradient(135deg,#7c3aed,#4f46e5)", border: "none", cursor: "pointer",
           display: "flex", alignItems: "center", justifyContent: "center",
           boxShadow: "0 4px 20px rgba(79,70,229,0.5)", zIndex: 1000,
